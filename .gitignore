@@ -1,3 +1,13 @@
-.idea
-*.mp3
+
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
 *.jpg
+*.png
+
+# IDE
+.vscode/
+.idea/
