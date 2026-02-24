@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "changermusictag"
+version = "0.1.0"
+description = ""
+authors = ["ncesam <rybushkin09@bk.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.14"
+pillow = "^12.1.1"
+climage = "^0.2.2"
+timg = "^1.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
