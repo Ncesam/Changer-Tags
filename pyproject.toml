@@ -1,15 +1,13 @@
 [tool.poetry]
-name = "changermusictag"
-version = "0.1.0"
-description = ""
+name = "Changer ID3 Tag"
+version = "0.0.1"
+description = "легковесный и мощный инструмент на Python для глубокого парсинга и визуализации метаданных MP3-файлов формата ID3v2"
 authors = ["ncesam <rybushkin09@bk.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.14"
-pillow = "^12.1.1"
-climage = "^0.2.2"
-timg = "^1.1.6"
+poetry-core = "^2.3.1"
 
 
 [build-system]
