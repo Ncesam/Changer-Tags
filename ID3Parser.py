@@ -1,11 +1,10 @@
-from dataclasses import dataclass
 import enum
 import logging
 import struct
+from dataclasses import dataclass
 from typing import BinaryIO, List, Any
 
 from Frame import Frame, FrameId
-
 
 
 class ID3Parser:
@@ -33,7 +32,7 @@ class ID3Parser:
     @staticmethod
     def _check_padding(file: BinaryIO) -> bool:
         data = file.read(4)
-        if not data or data == b"\x00\x00\x00\x00" or data[0] == 0xff :
+        if not data or data == b"\x00\x00\x00\x00" or data[0] == 0xff:
             return True
         file.seek(-4, 1)
         return False

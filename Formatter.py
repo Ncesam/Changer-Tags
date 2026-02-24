@@ -1,12 +1,11 @@
-import datetime
-import time
 from enum import Enum
 from typing import Any
 
-from ID3Parser import Info, Image
-from Frame import FrameType, FrameId
+from Frame import FrameId
+from ID3Parser import Info
 
 ROW_PADDING = 20
+
 
 class Formatter:
     class Mode(Enum):
@@ -39,7 +38,6 @@ class Formatter:
         self._print_row("Tag size", f"{info.size / 1024 / 1024:.2f} MB")
         print(sep, end="\n" * padding)
 
-
         for frame in info.frames:
             self._print_row("Frame ID", frame.id.value)
             self._print_row("Frame Name", frame.id.name)
@@ -61,5 +59,3 @@ class Formatter:
                 self._print_row("Content", display_content)
 
             print("-" * 60, end="\n" * padding)
-
-
